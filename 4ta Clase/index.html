@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etiquetas</title>
+</head>
+<body>
+    <div><!--Etiqueta de Estructura-->
+        <h1>Titulo h1</h1><!--Mayor tamaño de titulo-->
+        <h3>Titulo h3</h3>
+        <h6>Titulo h6</h6>
+        <!--Menos tamaño de titulo (cada titulo tiene un tamaño y diseño por defecto que de todas maneras se puede moficar)-->
+        
+        <!--Esto es un parrafo, cada bloque de texto ocupa de punta a punta en una linea/bloque de pagina-->
+        <p>Esto es un parrafo</p>
+        <p>Esto es un parrafo 2</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+           Vitae quibusdam saepe eligendi laudantium doloribus iure, hic omnis neque obcaecati 
+           dolor, maiores a rerum harum sapiente illo reprehenderit eius eum asperiores.</p>
+           
+        <!--Etiqueta que pone un texto en negrita, es decir ya tiene un estilo propio-->
+        <b>Texto en negrita</b>
+
+        <!--Texto Tachado-->
+        <s>Texto</s>
+
+        <!--Texto con COMILLAS ""-->
+        <blockquote>Texto en comillas</blockquote>
+
+        <!--Colocar un texto en forma de cita-->
+        <cite>Texto citado</cite>
+
+        <!--Un subTexto-->
+        <sub>Sub texto</sub>
+
+        <!--El br es para que rompa la linea y lo que se escriba abajo del mismo sea en la siguiente linea
+        <br>-->
+
+        <!--Texto sin etiqueta: Esto estara junto a lo otro-->   
+           texto sin etiqueta <br>
+
+        <!--Nos permite tener un area en la cual nosotros podes escribir texto, ademas de que podemos agrandar o achicar esta area-->
+        <textarea name="" id="" cols="30" rows="10"></textarea><br>
+        <textarea name="" id="" cols="20" rows="2"></textarea><br>      
+        <!--Con cols podemos modificar las columnas y con rows las filas.Cabe destacar que siempre empieza con un tamaño predeterminado-->
+
+        <!--Etiqueta que nos permite referenciar a un enlace interno(archivo nuestro o en el equipo) o externo(pagina externo)-->
+        <a href="http://fifa.com" target="_blank">Pagina de la Fifa</a><br>
+        <!--Lo que ponga en el targets dependera si al hacer click, iremos al enlace en la misma pestaña o en otra-->
+        
+        <a href="base.html" target="_blank">Acerca de nosotros</a><br>
+        
+        <!--Etiqueta para agregar una imagen-->
+        <img src="https://media.tycsports.com/files/2023/02/10/532928/lionel-messi_1440x810_wmk.webp" alt="Imagen de Messi" height="200em"><br>
+        <!-- El alt es para describir la imagen que colocamos y asi saber que imagen estaba ahi en caso de que pase algo-->
+        <!-- lo que puse despues del alt es para modificarle el tamaño a la imagen-->
+
+        <!--Agregar una imagen guardada en mi equipo-->
+        <img src="./img/Cristiano_Ronaldo_Portugal_2023.webp" alt="Imagen de Cristiano Ronaldo" height="200em"><br>
+        <!--La diferencia es que primero guardamos la imagen en la carpeta creada img, despues en src ponemos ./ 
+        y ahi nos aparecera para ir a la carpeta donde estan guardadas las imagenes, la seleccionamos y listo-->
+
+        <!--Etiqueta para agregar video interno(si lo almacenamos nosotros ocupara memoria y la carga de archivos sera lenta y pesada) o externo(guardamos los videos en un servidor o pagina externa alli)-->
+        <!--De la forma tradicional, un video de youtube por ejemplo no se coloca su link en sourse:
+        <iframe src="" frameborder="0"></iframe>
+        Sino que se hace lo siguiente:
+        1. Voy al video que quiero cargar y apreto en compartir
+        2. Al apretar en compartir apreto la primera opcion "Incorporar o "Embed"
+        3. Apretamos alli, y copiamos el codigo que nos da, pegandolo directo en el visual-->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/1jGtsGSDpz8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+        <!--Si en la pagina llega a aparecer video no disponible, es por un tema de privacidad del video, nada mas. Abajo un ejemplo-->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/8W96U7MGnbY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <!--Como podran ver arriba, despues del "Title" lo que le sigue son todas etiquetas que habilitan u desabilitan x opciones en el video,
+        por ejemplo la ultima de allowfullscreen, si la saco no me dejara poner el video en pantalla completa-->
+
+
+
+    </div>
+</body>
+</html>
