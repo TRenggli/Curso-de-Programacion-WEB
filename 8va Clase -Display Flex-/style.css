@@ -1,0 +1,76 @@
+div{
+    background-color: aqua;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+/* Display es la manera en la que se van a mostrar los elementos o tags de mi elemento html */
+
+#Elemento1{
+    /* none: Mantendra el elemento OCULTO a la vista del usuario. Un ejemplo de uso es que a medida que el usuario
+    va completando un formulario van apareciendo o no algunas opciones */
+    display: none; 
+}
+
+#Elemento2{
+    /* inline-block: Solo va a ocupar el espacio que ocupe el elemento, lo justo y suficiente */
+    display: inline-block;
+}
+
+input{
+    /* block: ocupa todo un bloque, es decir desde la punta izquierda a la punta derecha de la pagina*/
+    display: block;
+}
+
+#Elemento3{
+    /* Nos mantiene el contenido dentro, pero al salir del margen los envia hacia abajo*/
+    display: inline;
+}
+
+#Elemento4{
+    /* Otra aclaracion acerca de este inline-block, es que si otor elemento intenta ocupar el espacio de este, quien contenga
+    esta propiedad se desplazara, tipo si otro elemento lo esta arrinconando por ejemplo teniendo otro texto encima, 
+    este se ira para abajo */
+    display: inline-block;
+}
+
+/* Casos Practicos en donde podemos utilizar estos displays:
+
+Block: Cuando queremo que ocupe todo una linea
+inline: Cuando queremos que el elemento se desplace a medida que el tamaño de la pagina cambia, pero igual PERMITE
+        escribir/obicar otro elemento al lado
+inline block: Cuando queremos que ocupe todo una linea ademas de que cuando cambia la medida se desplaza hacia abajo y aunque
+              no ocupe toda esa linea, ese espacio0 NO sera ocupado por otra cosa ya que de todas formas es un block        
+*/
+
+/* Displays de tipo flex y grid: Nos permite tener un ORDENAMIENTO SOBRE NUESTROS ELEMENTOS*/
+
+.divFlex{
+    border: 1px solid black;
+    background-color: yellow;
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    text-align: center;
+}
+
+.FlexClass{
+    /**/
+    height: 500px;
+    background-color: aqua;
+    display: flex;
+    flex-wrap: wrap; /* Los elementos achican su tamaño pero se modifica el espacio que ocupan */
+    gap: 1px; /* Distancia o espacio entre cada uno de los elementos
+                 1rem, 2 em, 1vh son tambien otras UNIDADES DE MEDIDA como el PX */
+    align-items: end;
+    align-content: center;
+    justify-content: stretch;/
+}
+
+/* nowrap: Cuando llegabamos al limite de elementos, los empezaba a apretar para que sigan estando en esa linea. 
+   Se usa con justify-content y align-items con */
+
+/* wrap: Cuando no habia mas espacio, enves de apretarlos los mandaba para la linea de abajo manteniendo el espacio 
+ entre cada elemento. Lo usamos con justify-content y align-content */
+
+/* el justify-conten:space around se utiliza mayormente para las barras de navegacion, para tener a los elementos masomenos cerca */

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etiquetas (TAGS) en HTML</title>
+</head>
+<body>
+    <!--Listas: Existen las Ordenadas y las desordenadas-->
+    <!--La lista ordenada nos indica que de algun modo esos items tienen un orden especifico y no son cualquier cosa,la desordenada, lo contrario-->
+      
+   <h1>Lista Ordenada</h1>
+   <ol>
+       <li>Avance 2Km por la Avenida hasta el corte</li>
+       <li>Doble a la derecha y siga 3 cuadras</li>
+       <li>Al llegar a la esquina doble a la izquierda y avance media cuadra</li>
+       <li>Toque timbre en el edificio que se encuentra al lado de la floreria</li>
+
+       <h3>En caso de que no encuentre a nadie, dirijase a nuestro otro local</h3>
+       <li>Caminar 6 cuadras</li>
+       <li>Doblar a la derecha</li>
+       <li>Puerta azul con un grafiti</li>
+       <!--Si yo quisiera que esta ultima lista empiece desde 1, puedo sacarla de aca y meterla en otra ol
+       Ademas, poniendo despues de ol "start", el numero que pongamos entre las comillas despues del igual definira desde donde iniciara a contar la lista-->
+   </ol>
+
+ <hr><!--Esta etiqueta es para separar con una linea en la pagina-->
+   
+   <h2>Lista Desordenada</h2>
+   <ul>
+      <li>Venir de traje</li>
+      <li>llegar antes de las 20Hs</li>
+      <li>No dejar los vehiculos en la puerta</li>
+      <li>El ingreso es unicamente es por la entrda principal</li>
+   </ul>
+
+<hr>
+
+    <h4>Span</h4>
+    <!--Para aplicarle estilo a partes especificas de un texto en especifico-->
+    <p>Un texto con un <span>span</span></p>
+    <h2>Titulo con un <span>span</span></h2>
+    <!--La etiqueta por si sola no hace nada, pero al texto o lo que encierre dentro del span, le puedo explicar un estilo propio a esa palabra-->
+    <style>span{color:aqua}</style>
+
+    <hr>
+
+    <h5>TABLA</h5>
+    <!--Se compone de tres partes:
+    Cabecera (head)
+    Cuerpo (body)
+    Pie (footer)-->
+    <table><!--Etiqueta para indicar que contendra una tabla-->
+        <h4>Empleados</h4><!--Este tipo de etiqueta es mejor mantenerla afuera de la estructura de la tabla
+        ya que solamente a la hora de aplicar estilos por ejemplo, se los querremos aplicar al contenido de la tabla y no a encabezados como h4,h3, etc-->
+        <thead>
+         <th>ID</th>
+         <th>Nombre</th>
+         <th>Sector</th>
+        </thead>
+        <tbody>
+               <tr><!--Para crear una fila-->
+                 <td>1</td><!--Es un dato de cada uno de mis elementos de arriba, del head-->
+                 <td>Seba</td>
+                 <td>Tesoreria</td>
+               </tr>
+               <tr>
+                <td>2</td>
+                <td>Mariela</td>
+                <td>Administracion</td>
+               </tr>
+        </tbody>
+        <tfoot><!--Representa el bloque de finalizacion-->
+            <th></th>
+            <th></th>
+            <th></th>
+        </tfoot>
+    </table>
+    <!--Es importante usar y respetar la SEMANTICA, que es utilizar las etiquetas apropiadas en los lugares apropiados-->
+    <hr>
+
+    <h2>Formulario (Simple)</h2>
+    <h4>Login de Usuario</h4>
+    <form action=""><!--Etiqueta para crear un formulario, con ellos enviamos informacion a traves de request/peticiones-->
+      <label for="User">Usuario</label><!--Etiqueta semantica-->
+      <input type="text" name="User"><br><!--Los imputs son etiquetas para tomar datos del usuario-->
+      <label for="Password">Contraseña</label>
+      <input type="password" name="Password"><br>
+      <!--Si queremos que la contraseña no se vea y que aparezcan los famosos puntitos tenemos que usar: en type:"password"-->
+      
+      <button>Ingresar</button>
+      <button>Cancelar</button>
+      <!--Esta etiqueta funciona como un boton generico el cual puede tomar diversas acciones-->
+    </form>
+
+</body>
+</html>
