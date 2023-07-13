@@ -1,0 +1,35 @@
+html{
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+body{
+    background-color: aqua;
+}
+
+.container-flex{
+    border: 1px solid gray;
+    padding: 10px;
+    min-height: 400px;
+    background-color: aquamarine;
+    display: flex;
+    flex-wrap: wrap;
+    /*flex-wrap:Nos permite decidir si los elementos se achican o se mueven dentro del contenedor. Si no tiene espacio al costado, lo mandara hacia la linea de abajo
+      flex-nowrap: Los pega junto con el resto del contenedor */
+    gap: 5px;
+    /*El gap es el espacio que habra entre un elemento y el que tenga al lado */
+    flex-direction: row;
+    /* Con el flex-direction vamos a poder decir en que sentido quiero que se acomoden, si en filas o columnas, etc*/
+    justify-content: center;
+    /*Esto es para moverlos en el eje x, star para que empiecen o se agreguen a la izquierda, end para la derecha y center en le medio */
+    align-content: center;
+    /* Esto es para moverlos en el eje y*/
+}
+
+.elementos{
+    background-color: yellow;
+    text-align: center;
+    font-size: xx-large;
+    padding: 50px;
+    border: 2px solid black;
+}

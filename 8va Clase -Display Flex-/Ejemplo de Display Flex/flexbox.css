@@ -1,0 +1,77 @@
+html{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: aqua;
+}
+
+*,*::after,*::before{
+    box-sizing: inherit;
+    margin: 0 auto;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-between;
+}
+
+a{
+    text-decoration: none;
+    font-size: 2.3rem;
+}
+
+.container{
+    background-color: rgb(246, 26, 254);
+    margin: 0 auto;
+    border: 2px solid black;
+}
+
+.container-flex{
+    border: 1px solid gray;
+    padding: 10px;
+    min-height: 800px;
+    background-color: aquamarine;
+    display: flex;
+    flex-wrap: wrap;
+    /*flex-wrap:Nos permite decidir si los elementos se achican o se mueven dentro del contenedor. Si no tiene espacio al costado, lo mandara hacia la linea de abajo
+      flex-nowrap: Los pega junto con el resto del contenedor */
+    gap: 5px;
+    /*El gap es el espacio que habra entre un elemento y el que tenga al lado */
+    /*Esto es para moverlos en el eje x, star para que empiecen o se agreguen a la izquierda, end para la derecha y center en le medio */
+    align-content: flex-start;
+    /* Esto es para moverlos en el eje y*/
+    justify-content: flex-start;
+}
+
+.elementos{
+    background-color: yellow;
+    text-align: center;
+    max-width: 300px;
+    padding: 10px 5px;
+    border-radius: 15px;
+}
+
+.TituloPagina{
+    text-align: center;
+    font-size: 80px;
+}
+
+.img-card{
+    width: 100%;
+    border-radius: 15px;
+    aspect-ratio: 16/9;/*el primer numero es tanto de ancho y el segundo tanto de alto*/
+    object-fit: contain;
+
+}
+
+.textosTitulos{
+    font-size: 3.5rem;
+}
+
+.textosParrafo{
+    font-size: 1.5rem;
+}
