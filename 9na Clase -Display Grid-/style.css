@@ -1,0 +1,59 @@
+.grid{
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr;/* Me indica la cantidad de columnas y que espacio van a ocupar estas columnas
+                            Puedo indicar de tres maneras diferentes: por px, por porcentaje(%) o por un espacio completo(xfr, donde esta la x ponemos la cantidad que querramos*/
+ /* grid-template-rows: 1fr 1fr; Me indica la cantidad de filas y que espacio van a ocupar estas filas*/
+    grid-gap: 1vw;
+}
+
+ /* 1fr= Es la cantidad de columnas y/o elementos que tengo, y para saber cuanto medira cada elemento, se que:
+   de 100px que tengo, lo tengo que dividir por la cantidad de columnas que tenga, y ese resultado sera el espacio que ocupara cada elemento*/
+
+.grid-template{
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "nav main aside"
+    "footer footer footer";
+    grid-template-columns: 10% 1fr 20%;
+    grid-template-rows: 80px 1fr 80px;
+    grid-gap: 5px;
+    height: 65vh;
+}
+
+/* Lo de arriba basicamente es una matriz, si pongo el header 3 veces, ademas de decir que hay 3 columnas, digo que el header va a ocupar 3 columnas
+en la fila 2, dije que el nav al ocupar solo la columa 1 lo puse en la 1, el main ocupa solo la 2 y lo puse en la 2 y el aside solo la 3 y lo puse en la pocision de la columna 3
+por ultimo el footer estaba en la fila 3 y ocupaba al igual que el header las 3 columnas asique lo puse 3 veces*/
+
+.gridContent{
+   background-color: aqua;
+   padding: 15px 10px;
+   text-align: center;
+   border: 1px solid black;
+}
+
+.header, .main, .aside, .nav, .footer{/*Con el punto indicamos que lo siguiente es una clase, y ponemos la coma para escribir OTRA clase mas*/
+    background-color: aqua;
+    padding: 15px;
+    border: 1px solid black;
+}
+
+#Header-div{
+    grid-area: header;
+}
+
+#Main-div{
+   grid-area: main;
+}
+
+#Nav-div{
+    grid-area: nav;
+}
+
+#Aside-div{
+    grid-area: aside;
+}
+
+#Footer-div{
+    grid-area: footer;
+}
