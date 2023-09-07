@@ -1,0 +1,23 @@
+html{
+    box-sizing: border-box;
+}
+
+.header{
+    display: flex;
+    background-color: aqua;
+}
+
+a {
+    text-decoration: none;
+}
+
+.principal{
+    display: flex;
+    justify-content: center;
+    background-color: brown;
+}
+
+.card{
+    margin: 50px;
+}
+

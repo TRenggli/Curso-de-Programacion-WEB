@@ -1,0 +1,16 @@
+.contenedorPrimario{
+    background-color: aqua;
+    border: 1px solid black;
+}
+
+.grid element{
+    background-color: blanchedalmond;
+
+    border: 1px solid  black;
+}
+
+.grid-example{
+    display:grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 60fr 100fr 1fr;
+}

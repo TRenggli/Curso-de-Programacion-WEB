@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <title>Boostrap</title>
+ </head>
+ <body>
+     <h1  class="TituloPrincipal">Contenedor</h1>
+     <div class="Subtituloytexto">
+        <h2>Contenedor Bootstrap</h2>
+        <p>Este es un contenido del contenedor</p>
+        <p>Pie de Contenedor</p>
+     </div>
+
+     <h1 class="text-center">Display en Gris Clasico</h1>
+     <div class="Grid-example">
+        <div class="grid-elements">Elemento 1</div>
+        <div class="grid-elements">Elemento 2</div>
+        <div class="grid-elements">Elemento 3</div>
+     </div>
+     <hr>
+    
+     <h1 class="text-center">Display en Grid Bootstrap</h1>
+     <div class="row">
+        <div class="col-1 grid-elements">Elemento 1</div>
+        <div class="col-2 grid-elements">Elemento 2</div>
+        <div class="col-9 grid-elements">Elemento 3</div>
+     </div>
+     <div class="row">
+        <div class="col grid-elements">Elemento 1</div>
+        <div class="col grid-elements">Elemento 2</div>
+        <div class="col grid-elements">Elemento 3</div>
+     </div>
+
+     <div class="row">
+        <div class="col-sm-auto grid-elements">Elemento X</div>
+        <div class="col-sm-auto grid-elements">Elemento X</div>
+        <div class="col-sm-auto grid-elements">Elemento X</div>
+        <div class="col-sm-auto grid-elements">Elemento X</div>
+        <div class="col-sm-auto grid-elements">Elemento X</div>
+     </div>
+     
+     <hr>
+      
+     <h1>Tablas en Bootstrap</h1>
+     <h3>Tabla en HTML clasico</h3>
+     <div>
+        <table>
+            <thead class="table-success">
+                <th scope="col">User</th>
+                <th scope="col">Email</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Tomas</td>
+                    <td>tomas@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Lucas</td>
+                    <td>lucas@gmail.com</td>
+                </tr>
+            </tbody>
+        </table>
+     </div>
+      
+     <h3>Tabla en Bootstrap</h3>
+     <div>
+      <table class="table table-bordered table-hover table-dark border-success caption-top"> <!--Tabla, lo siguiente estara en formato de tabla
+                                                    table-hover es para que me marque donde estoy parado con el mouse
+                                                    table-dark es para que aparezca de color negro
+                                                    table-bordered es para remarcar los bordes y espacios de la tabla
+                                                    border-succes es para cambiar el color del los bordes, donde esta el succes ponemos el color-->
+         <thead class="table-success"> <!--Table head nos decia cada una de las cosas que iba a tener esta tabla y con la clase table-success le podemos poner un color de fondo-->
+            <th scope="col">User</th> <!--El scope col se usa para indicar que tendra caracter de columna-->
+            <th scope="col">Email</th>
+         </thead>
+         <tbody>
+            <tr>
+                <td>Tomas</td>
+                <td>tomas@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Lucas</td>
+                <td>lucas@gmail.com</td>
+            </tr>
+         </tbody>
+         <caption>Lista de Usuarios</caption><!--Esto es para agregar un comentario debajo de la tabla pero si agrego caption-top puede quedar arriba-->
+      </table>
+     </div>
+      
+      <h1>Formulario Clasico</h1>
+      <div class="container-sm w-25 border border-3 p-3 rounded-3 border-black">
+        <form class="row g-3" action="">
+          <div class="col-md-4 form-floating mb-3">
+            <input type="text" class="form-control" name="name" id="name" placeholder="Ingrese su Nombre">
+            <label for="name" class="form-label">Nombre</label>
+          </div> 
+
+          <div class="col-md-4 form-floating mb-3">
+            <input type="text" class="form-control" name="apellido" id="apellido" placeholder="Ingrese su Apellido">
+            <label for="name" class="form-label">Apellido</label>
+          </div>
+
+          <div class="col-md-4 form-floating mb-3">
+            <input type="text" class="form-control" name="name" id="usuario" placeholder="Ingrese su Usuario">
+            <label for="name" class="form-label">Usuario</label>
+          </div>
+
+          <div class="form-floating mb-3">
+            <input type="email" class="form-control" name="email" id="emal" placeholder="Ingrese su email">
+            <label for="email" class="form-label">Correo Electronico</label>
+          </div>
+
+          <div class="form-floating mb-3">
+            <input type="password" class="form-control" name="password" id="password" placeholder="Ingrese su clave">
+            <label for="password" class="form-label">Contraseña</label>
+          </div>
+
+          <button class="btn btn-primary">Enviar</button>
+        </form>
+      </div>
+ </body>
+</html>
