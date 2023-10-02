@@ -34,7 +34,8 @@ const jugadores = {
 }
 
 //Esta mal
-jugadores.10
+//jugadores.10
+
 //*Esta bien
 jugadores[10]
 jugadores["D.T"]
@@ -81,6 +82,9 @@ Object.values(formulario)
 Object.entries(formulario)
 Object.entries(formulario)[1]//si pongo despues corchete y un numero, mostrare una pocision que esa pocision sera un array en el que estaran metida la propiedad y valor
 Object.entries(formulario)[0][1] //Agregandole el segundo corchete, vamos alindice 0 en el que se encuentra el "nombre", y la propiedad nombre que valor tiene? "Sebastian" en este caso
-jugadores.
 
-verduras
+//! NO SE PUEDE ACCEDER A LA PROPIEDAD DE UN OBJETO, PERO SI AL OBJETO EN SI
+
+
+//! HOMEWORK: Crear un objeto con 3 propiedades, y agregar una propiedad usando bracket notation
+// Tambien, guardar en variables, una lista de propiedades, y en otra, una lista de valores
