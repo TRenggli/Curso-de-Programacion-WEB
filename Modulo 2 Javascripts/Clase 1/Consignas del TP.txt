@@ -1,0 +1,3 @@
+JavaScript es un lenguaje de programacion que nos ayudara en el frontend
+
+Este codigo ejecutara ciertas acciones en base a un momento x que definimos nosotros

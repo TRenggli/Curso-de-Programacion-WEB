@@ -1,0 +1,20 @@
+@media screen and (min-width:1024) /*Diseño para pantallas de Computadoras*/
+{
+    body{
+        display: flex;
+    }
+}
+
+@media screen and (min-width:767) and (min-width:1023) /*Diseño para pantallas de Tablets*/
+{
+    body{
+        display: flex;
+    }
+}
+    
+@media screen and (max-width:767) /*Diseño para pantallas de Celulares*/
+{
+    body{
+        display: flex;
+    }
+}

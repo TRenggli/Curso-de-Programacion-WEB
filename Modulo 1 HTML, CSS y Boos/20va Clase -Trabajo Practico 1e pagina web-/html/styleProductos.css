@@ -1,0 +1,129 @@
+@media screen and (min-width:1024) /*Diseño para pantallas de Computadoras*/
+{
+    body{
+        display: grid;
+        background-color: rgb(0, 0, 0);
+        gap: 4px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 0,5fr 2fr 2fr 0,5fr;
+        grid-template-areas: 
+        "header header header"
+        "aside main aside"
+        "aside main aside"
+        "footer footer footer"
+    }
+
+    #Header-div{
+        grid-area: header;
+    }
+    
+    #Main-div{
+       grid-area: main;
+    }
+    
+    #Aside-div{
+        grid-area: aside;
+    }
+    
+    #Footer-div{
+        grid-area: footer;
+    }
+
+    .header, .main, .aside, .nav, .footer{/*Con el punto indicamos que lo siguiente es una clase, y ponemos la coma para escribir OTRA clase mas*/
+        background-color: aqua;
+        padding: 15px;
+        border: 1px solid black;
+    }
+
+    h2{
+        color: crimson;
+        font-size: 75px;
+        text-align: left;
+    }
+    
+    h3{
+        color: rgba(3, 67, 245, 0.541);
+        font-size: 75px;
+        text-align: left;
+    }
+    
+    h4{
+        color: rgb(245, 221, 10);
+        font-size: 75px;
+        text-align: left;
+    }
+}
+
+
+@media screen and (min-width:767) and (min-width:1023) /*Diseño para pantallas de Tablets*/
+{
+    body{
+        display: grid;
+        background-color: rgb(0, 0, 0);
+        gap: 4px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 0,5fr 2fr 2fr 0,5fr;
+        grid-template-areas: 
+        "header header header"
+        "aside main aside"
+        "aside main aside"
+        "footer footer footer"
+    }
+    h2{
+        color: crimson;
+        font-size: 75px;
+        text-align: left;
+    }
+    
+    h3{
+        color: rgba(3, 67, 245, 0.541);
+        font-size: 75px;
+        text-align: left;
+    }
+    
+    h4{
+        color: rgb(245, 221, 10);
+        font-size: 75px;
+        text-align: left;
+    }
+}
+  
+
+@media screen and (max-width:767) /*Diseño para pantallas de Celulares*/
+{
+    body{
+        display: grid;
+        background-color: rgb(0, 0, 0);
+        gap: 4px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0,5fr 2fr 2fr 0,5fr 0,5fr;
+        grid-template-areas: 
+        "header"
+        "main"
+        "main"
+        "aside"
+        "footer"
+    }
+    h2{
+        color: crimson;
+        font-size: 75px;
+        text-align: left;
+    }
+    
+    h3{
+        color: rgba(3, 67, 245, 0.541);
+        font-size: 75px;
+        text-align: left;
+    }
+    
+    h4{
+        color: rgb(245, 221, 10);
+        font-size: 75px;
+        text-align: left;
+    }
+}
+
+#Perifericos{
+    color: black;
+    text-align: center;
+}

@@ -1,0 +1,44 @@
+Proyecto Práctico: Página de Inicio de E-Commerce
+Enunciado:
+Crea una página de inicio para una tienda en línea ficticia. Debes utilizar HTML y CSS para diseñar la página y agregar algunos productos de muestra. Tu objetivo es crear una interfaz atractiva y funcional para los usuarios.
+
+Requisitos:
+Encabezado:
+
+Agrega un encabezado con el nombre de la tienda y un menú de navegación con enlaces a las siguientes secciones: "Inicio", "Productos", "Ofertas" y "Contacto".
+Banner Principal:
+
+Agrega un banner grande en la parte superior de la página con una imagen representativa de productos o la marca.
+Incluye un botón "Explorar" que lleve a los usuarios a la sección de productos.
+Sección de Productos Destacados:
+
+Crea una sección donde mostrarás algunos productos destacados.
+Cada producto debe tener una imagen, nombre, precio y un botón "Comprar".
+Sección de Ofertas Especiales:
+
+Agrega una sección que muestre algunas ofertas especiales o descuentos.
+Muestra los productos con imágenes, precios originales y precios con descuento (si aplicable).
+
+Seccion de contacto:
+En al seccion de contacto tendremos un formulario el cual nos va a pedir campos de nombre , email y un mensaje. Debe contar con el boton de "Enviar" , y el diseño del formulario es a gusto del alumno.
+
+Pie de Página:
+
+Crea un pie de página con enlaces adicionales, información de contacto y redes sociales.
+Puntos Extras (Opcionales):
+Agrega interacciones y animaciones CSS para mejorar la experiencia del usuario.
+Utiliza fuentes y colores adecuados para el diseño de la tienda.
+
+Entrega:
+Crea una carpeta para tu proyecto y organiza tus archivos HTML y CSS dentro de ella. Puedes usar estructuras de carpetas adicionales según sea necesario. Asegúrate de incluir imágenes y otros recursos utilizados en tu diseño.
+
+Este proyecto te brinda la oportunidad de practicar tus habilidades en diseño web utilizando HTML y CSS. Puedes personalizarlo y agregar más detalles según tus preferencias y nivel de experiencia. ¡Diviértete diseñando tu página de inicio de comercio electrónico!
+
+Puntos a tener en cuenta:
+*Se puede utilizar las siguientes utilidades: Bootstrap, Google Fonts. (se valorara como punto EXTRA en caso que las utilicen)
+
+*¿Que se evaluara? Se evaluara el diseño de la pagina, el uso de herramientas (bootstrap/Google Fonts), manejo de SEMANTICA de los elementos, diseño de CSS (cantidad utilizada), manejo de displays de elementos (flex/grid/block/inline-block), uso de algun tipo de animacion (hover/@keyframes), presentacion y desarrollo.
+
+PUNTOS EXTRA: 
+-Creacion de enlaces adicionales
+-Usos de herramientas/propiedades EXTRAS (uso de animaciones, trasformaciones, tags, etc)
